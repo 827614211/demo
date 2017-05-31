@@ -1,0 +1,470 @@
+*{
+	margin: 0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.second{
+	position: relative; 
+	font: 700 60px 'Microsoft Yahei'; 
+	text-align: center;
+}
+.sldea{
+	position: relative; 
+	font: 700 60px 'Microsoft Yahei'; 
+	text-align: center;
+}
+.sldeaz{
+	position: relative; 
+	top: 35%; 
+	font: 700 60px 'Microsoft Yahei'; 
+	/*text-align: center;*/
+}
+
+/*第一屏开始*/
+@keyframes rotate{
+	0%{
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	100%{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+.wrap{
+	margin:47px;
+	perspective: 1000px;
+}
+.cube{  
+	margin: auto;
+    width: 200px;
+	height: 200px;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: rotate 20s infinite linear;}
+.cube>div{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background: #333;
+	opacity: .9;
+	border: 1px #fff solid;
+	color:#fff;
+	font-size: 36px;
+	font-family: "microsoft yahei";
+	font-weight: bold;
+	text-align: center;
+	line-height: 200px;
+}
+.cube .out-front{
+	transform: translateZ(100px);
+}
+.cube .out-back{
+	transform: translateZ(-100px) rotateY(180deg) ;
+}
+.cube .out-left{
+	transform: rotateY(90deg) translateZ(100px) ;
+}
+.cube .out-right{
+	transform: rotateY(-90deg) translateZ(100px) ;
+}
+.cube .out-top{
+	transform:  rotateX(90deg)  translateZ(100px);
+}
+.cube .out-bottom{
+	transform: rotateX(-90deg)  translateZ(100px) ;
+}
+.cube>span{
+	display: block;
+	width: 100px;
+	height:100px;
+	border: 1px #000 solid;
+	background-color: #999;
+	top:50px;
+	left:50px;
+	position: absolute;
+}
+.cube .in-front{
+	transform: translateZ(50px);
+}
+.cube .in-back{
+	transform: translateZ(-50px) rotateY(180deg) ;
+}
+.cube .in-left{
+	transform: rotateY(90deg) translateZ(50px) ;
+}
+.cube .in-right{
+	transform: rotateY(-90deg) translateZ(50px) ;
+}
+.cube .in-top{
+	transform:  rotateX(90deg)  translateZ(50px);
+}
+.cube .in-bottom{
+	transform: rotateX(-90deg)  translateZ(50px) ;
+	
+}
+.wrap:hover .cube .out-front{
+	transform: translateZ(200px);
+}
+.wrap:hover .cube .out-back{
+	transform: translateZ(-200px) rotateY(180deg) ;
+}
+.wrap:hover .cube .out-left{
+	transform: rotateY(90deg) translateZ(200px) ;
+}
+.wrap:hover .cube .out-right{
+	transform: rotateY(-90deg) translateZ(200px) ;
+}
+.wrap:hover .cube .out-top{
+	transform:  rotateX(90deg)  translateZ(200px);
+}
+.wrap:hover .cube .out-bottom{
+	transform: rotateX(-90deg)  translateZ(200px) ;
+}
+
+.tty img{
+	width: 200px;
+	height: 200px;
+}
+
+.cont{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	position: relative;
+	margin:20px auto;
+	left: -300px;
+	background-size: 100% 100%;
+}
+.cont img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.box{
+	width: 350px;
+	height: 350px;
+	margin-left: 25px;
+	margin-top: 25px;
+	background-size: 100% 100%;
+	
+}
+.boo{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.med{
+   width: 250px;
+   height: 250px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.mm{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:37px;
+  left: 35px;
+}
+.mm img{
+	width: 30px;
+	height: 30px;
+}
+.pao1{
+	-webkit-animation: time 5s linear infinite;
+}
+		@keyframes time{
+		 0%  { 
+			transform: rotate(0deg);
+		}
+		100% { 
+			transform: rotate(360deg);
+		}
+	 }
+	 
+.pao2{
+     	-webkit-animation: mun 5s linear infinite;
+     }
+		@keyframes mun{
+	 0%  { 
+		transform: rotate(0deg);
+	}
+	100% { 
+		transform: rotate(-360deg);
+	}
+ }
+ .pao3{
+     	-webkit-animation: mun 5s linear infinite;
+     }
+		@keyframes mun{
+	 0%  { 
+		transform: rotate(0deg);
+	}
+	100% { 
+		transform: rotate(-360deg);
+	}
+ }
+ 
+#descr{
+	width: 410px;
+	height: 280px;
+	top: 200px;
+	left: -410px;
+	position:absolute;
+	border: 1px solid #2758a4;
+}
+.sex{
+	margin-left: 100px;
+}
+.phone{
+	margin-left: 115px;
+}
+#share{
+	width: 30px;
+	height: 150px;
+	position: absolute;
+	top: 70px;
+	right: -32px;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid #2758a4;
+}
+.meda span,p{
+	margin-left: 20px;
+}
+/*第一屏结束*/
+
+
+/*第二屏开始*/
+.second .skill{
+	margin-top: 200px;
+}
+.skillse{
+	width: 970px;
+	margin: 0 auto;
+}
+.skill-lang{
+	width: 192px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	color:black;
+	color:#152b5a;
+	border: 1px solid white;
+}
+.skill-lang li{
+	padding: 10px 0;
+}
+.skill-lang .langge{
+	background: white;
+	border: 1px solid gray;
+}
+.skill-lang li:hover{
+	cursor: pointer;
+	background: white;
+}
+/*第二屏结束*/
+
+/*第三屏开始*/
+.opus{
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.opus .two{
+	width: 1180px;
+	height: 360px;
+	margin: 5px 10px;
+	/*border: 1px solid black;*/
+}
+.use{
+	position: relative;
+}
+.two img{
+	width: 622px;
+	height: 300px;
+}
+.two-g li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	z-index: 1;
+	display: none;
+}
+.btn{
+	width: 30px;
+	height: 50px;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+	top: 130px;
+	display: none;
+	cursor:pointer;
+	z-index: 100 !important;
+    float: left;
+}
+.use:hover .btn{ 
+	display:block;
+}
+.use .boc li.active{
+	background:gainsboro;
+}
+.riet{
+	right:557px;
+}
+.boc{
+	position: absolute;
+	top: 280px;
+	left:257px;
+	z-index: 100;
+}
+.boc li{
+	width:15px;
+	height: 15px;
+	float: left;
+	margin: 0 5px;
+	border-radius: 50%;
+	border: 1px solid gainsboro;
+}
+.depice{
+	width: 500px;
+	height: 300px;
+	float: right;
+	/*border: 1px solid red;*/
+}
+.depice p span{
+	font-size: 15px;
+}
+.use1{
+	float: left;
+}
+.use1 li{
+	width: 200px;
+	float: left;
+	position: relative;
+	margin: 0 5px;
+}
+
+
+.use1 li img{
+	width: 200px;
+}
+
+
+
+.bou{
+	width:500px;
+	height:500px;
+	top: 136px;
+    left: 399px;
+    text-align: center;
+    line-height: 500px;
+	position: absolute;
+	display: none;
+	z-index: 120;
+}
+
+.bou img{
+	width: 200px;
+	height: 300px;
+}
+.tan{
+	position: absolute;
+	top: 23%;
+	left: 21%;
+	z-index: 130;
+	display: none;
+}
+.tan1{
+	position: absolute;
+	top: 23%;
+	left: 21%;
+	z-index: 130;
+	display: none;
+}
+.tan2{
+	position: absolute;
+	top: 23%;
+	left: 21%;
+	z-index: 130;
+	display: none;
+}
+.tan img{
+	width: 500px;
+	height: 800px;
+	
+}
+.tan1 img{
+	width: 500px;
+	height: 800px;
+	
+}
+.tan2 img{
+	width: 500px;
+	height: 800px;
+}
+.more{
+	width: 113px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 522px;
+	border: 1px solid gainsboro;
+}
+.more a{
+	color: white;
+}
+/*第三屏结束*/
+
+
+
+/*第四屏开始*/
+.touch{
+	margin: 0 auto;
+	width: 700px;
+	height: 200px;
+	/*border: 1px solid red;*/
+}
+.touch h3{
+	font-size: 20px;
+	text-align: center;
+}
+.affil{
+	width: 500px;
+	height: 200px;
+	margin-top: 20px;
+	margin: 0 auto;
+	font-size: 20px;
+	/*border: 1px solid red;*/
+}
+.pingjia{
+	margin: 0 auto;
+	width: 500px;
+	height: 200px;
+	font-size: 18px;
+	/*border: 1px solid red;*/
+}
+.pingjia .tit{
+	font-size: 25px;
+}
+.mle{
+	margin-left: 93px;
+}
+
+/*第四屏结束*/
