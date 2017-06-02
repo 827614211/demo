@@ -1,0 +1,410 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+/*top begin*/
+
+.top {
+	width: 100%;
+	height: 35px;
+	background: #333333;
+}
+.nav {
+	width: 1095px;
+	margin: 0 auto;
+}
+.top .tou1 {
+	color: white;
+	float: left;
+	font-size: 11px;
+	line-height: 35px;
+}
+.top .tou2 {
+	/*border: 1px solid white;*/
+	/*line-height: 35px;*/
+	margin: 12px 10px;
+	height: 35px;
+	float: right;
+}
+.top .tou2 .lu{
+	border: none;
+}
+.top .tou2 li {
+	text-align: center;
+	color: #cccccc;
+	height: 16px;
+	width: 70px;
+	font-size: 11px;
+	float: left;
+	border-left: 1px solid #5C5C5C;
+}
+/*top end*/
+
+/* cont begin*/
+.cont{
+	height: 174px;
+	/*border: 1px solid red;*/
+position: relative;
+}
+.cont .logo{
+	width: 180px;
+ 	height: 67px;
+ 	
+ 	background: url(../img/header-s99b663c0c8-ec23ba2aa8.png) no-repeat 0 -224px;
+ 	position: absolute;
+ 	left:432px;
+ 	top: 50px;
+}
+.inut{
+	width: 277px;
+	height: 70px;
+	/*float: right;*/
+	position: absolute;
+	right: 100px;
+	top: 53px;
+	/*border: 1px solid red;*/
+}
+
+.inut input{
+	border: 0;
+	border-bottom: 1px solid gainsboro;
+	height: 30px;
+	width: 225px;
+	color:gray;
+   margin: 5px 0;
+}
+.inut .shou{
+	width: 40px;
+	height: 33px;
+	border: none;
+  /*display: inline-block;*/
+	margin: 0px 0 0 -6px;
+}
+.shouye{
+
+	/*border:1px solid black;*/
+	height: 30px;
+}
+.shouye li{
+	float:left;
+	height: 20px;
+	width:87px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	/*margin: 0 60px 0 0;*/
+}
+.shouye .qita{
+border-right: 1px solid #cccccc;
+	
+}
+.pingpai{
+	overflow: hidden;
+}
+.cont1{
+	border-bottom: 1px solid #eaeaea;
+	height: 715px;
+	margin: 0 0 47px 0;
+}
+.pingpai li{
+	/*border: 1px solid red;*/
+	width: 270px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 15px 0;
+	border-right: 1px solid #eaeaea;
+	float:left;
+}
+.pingpai .bakongh{
+	border:0;
+}
+.beijing{
+	width: 40px;
+	height: 36px;
+	margin: 5px 0 0 80px;
+	float: left;
+	background: url(../img/icon-normal-s050f8cce60-bc355ccaf1.png)  0 -1578px;
+	/*border: 1px solid red;*/
+	display:inline-block;
+}
+.beijing1{
+	width: 29px;
+	height: 36px;
+	margin: 5px 0 0 80px;
+	float: left;
+	background: url(../img/icon-normal-s050f8cce60-bc355ccaf1.png)  0 -1623px;
+	/*border: 1px solid red;*/
+	display:inline-block;
+}
+.beijing2{
+	width: 36px;
+	height: 36px;
+	margin: 5px 0 0 80px;
+	float: left;
+	background: url(../img/icon-normal-s050f8cce60-bc355ccaf1.png)  0 -1669px;
+	/*border: 1px solid red;*/
+	display:inline-block;
+}
+
+.beijing3{
+	width: 44px;
+	height: 35px;
+	margin: 5px 0 0 80px;
+	float: left;
+	background: url(../img/icon-normal-s050f8cce60-bc355ccaf1.png)  0 -1714px;
+	/*border: 1px solid red;*/
+	display:inline-block;
+}
+
+/*cont end*/
+
+
+/*shop begin*/
+.shop{
+	/*border: 1px solid red;*/
+}
+.shop h1{
+	display: inline-block;
+}
+.xyijia{
+	float: right;
+	margin-top: 15px;
+	margin-right:20px;
+}
+.jiaqian{
+	margin-top:23px ;
+}
+.jiaqian img{
+	width: 260px;
+	height: 210px;
+	/*margin: 0 2px;*/
+	/*margin-right: 10px;*/
+}
+.duozhi{
+	margin-right:10px ;
+}
+.cc{
+	margin-top:54px ;
+}
+/*shop end*/
+
+/*hot begin*/
+.hot{
+	width:100%;
+	height: 660px;
+	background:#f5f5f5 ;
+	margin-top: 43px;
+	overflow: hidden;
+}
+.side{
+	width: 354px;
+	height: 556px;
+	/*border: 1px solid red;*/
+	/*display: inline-block;*/
+	float:left;
+	margin-top: 50px;
+	margin-right: 9px ;
+	
+}
+.renqi{
+	background: white;
+	width: 352px;
+	height: 247px;
+	/*background: white;*/
+	border: 1px solid white;
+}
+.tuijian{
+	width: 331px;
+	height: 221px;
+	margin: 10px;
+	border: 1px solid #eaeaea;
+	
+}
+.tuijian h1{
+	margin: 10px;
+	
+	text-align: center;
+}
+.hh1{
+	height: 50px;
+	display: inline-block;
+	border-bottom: 2px solid black;
+}
+.hh3{
+	/*border: 1px solid red;*/
+	width: 155px;
+	margin:auto;
+	margin-top: 56px;
+	/*margin-right: 50px;*/
+	
+}
+.wuping{
+	width: 352px;
+	height: 290px;
+	/*border: 1px solid black;*/
+	margin-top:15px ;
+}
+.wuping img{
+	height: 290px;
+	width: 352px;
+}
+.xiezi{
+	width: 352px;
+	height: 290px;
+}
+.bibi{
+	width: 352px;
+	margin-top: 13px;
+}
+.gang{
+	width: 352px;
+	height: 250px;
+}
+.kuzi{
+	width: 352px;
+	margin-top: 11px;
+	height: 290px;
+}
+/*hot end*/
+
+/*contet begin*/
+
+.juja{
+	margin-top: 70px;
+}
+.juja h1{
+	display: inline-block;
+}
+.juja span{
+	margin-left: 25px;
+}
+.juja ul{
+	float:right;
+	/*border: 1px solid red;*/
+}
+.juja li {
+	float:left;
+
+	margin: 0 10px;
+}
+.juja a{
+	margin: 0 20px;
+}
+.juja .dsa{
+	margin-right: 0;
+}
+.sanse{
+	width: 263px;
+	height: 400px;
+	float: left;
+	margin-top: 20px;
+	margin-right:8px;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+.sanse img{
+	width: 263px;
+	height: 269px;
+}
+.sanse span{
+	font-size: 12px;
+	/*border: 1px solid red;*/
+}
+.sanse p{
+	color: red;
+	margin: 15px 0;
+}
+.sanse .yidong{
+    height: 56px;
+    line-height: 56px;
+    display: inline-block;
+	border-top:1px solid gainsboro ;
+}
+.contet{
+	overflow: hidden;
+}
+.contet .jiantou{
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+.jiantou{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	/*border: 1px solid red;*/
+	
+}
+.jiantou span{
+text-align: center;
+/*margin: -10px 5px;.*/
+line-height: 50px;
+display: inline-block;
+
+}
+.jiantou img{
+	line-height: 50px;
+	/*display:inline-block;*/
+	top: 10px;
+	position: absolute;
+}
+/*contet end*/
+
+/*contbt begin*/
+.contbt{
+	height: 300px;
+	background:gainsboro;
+}
+.contbt .css{
+	height: 300px;
+	/*border: 1px solid red;*/
+}
+.contbt .hopt{
+	width: 363px;
+	height: 298px;
+	text-align: center;
+	/*border: 1px solid black;*/
+	float: left;
+}
+.bot1{
+	margin-top: 60px;
+}
+.bot2{
+	margin-top: 34px;
+	font-size: 20px;
+	/*width: 170px;*/
+}
+.bot3{
+	margin-top: 20px;
+	font-size: 12px;
+}
+.bot4{
+	font-size: 12px;
+	margin-top: 37px;
+	border: 1px solid red;
+	width: 125px;
+	line-height: 27px;
+	height: 27px;
+	display:inline-block;
+}
+/*contbt end*/
+
+/*contdu begin*/
+.contdu{
+	height: 205px;
+	background: #414141;
+}
+/*contdu end*/

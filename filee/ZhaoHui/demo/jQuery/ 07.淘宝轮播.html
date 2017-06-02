@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		
+			.cont{
+				width:520px;
+				height:280px;
+				overflow:hidden; 
+				position:relative;
+			}
+			.box{
+				width:5000px; 
+				position:absolute; 
+				left:0px; 
+				top:0;
+			}
+			
+			.box li{
+				float: left;
+			}
+			.mun{
+				position:absolute; 
+				width:100%; 
+				bottom:10px; 
+				left:0; 
+				text-align:center; 
+				font-size:0px;
+			}
+		    .mun li{
+		    	width:10px;
+				height:10px; 
+				background:#888; 
+				border-radius:50%; 
+				display:inline-block; 
+				margin:0 3px; 
+				cursor:pointer;
+		    }
+		    .tt{
+		    	width: 30px;
+		    	height: 50px;
+		    	float: left;
+		    	text-align: center;
+		    	line-height: 50px;
+		    	font-size: 25px;
+		    	color: white;
+		    	position: absolute;
+		    	top:50%;
+		    	display: none;
+		    	margin-top: -25px;
+		    	background:rgba(0,0,0,0.5); 
+		    }
+		    .lite{
+		    	left: 0;
+		    }
+		    .rite{
+		    	right: 0;
+		    }
+		    .cont:hover .tt{ 
+					display:block;
+				}
+            .cont .mun li.on{ 
+					background:#F60;
+				}
+
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<ul class="box">
+				<li><a href="#"><img src="img/tao2.webp"/></a></li>
+				<li><a href="#"><img src="img/tao1.webp"/></a></li>
+				<li><a href="#"><img src="img/tao3.jpg"/></a></li>
+				<li><a href="#"><img src="img/tao4.webp"/></a></li>
+			</ul>
+			<ul class="mun">
+				
+			</ul>
+			<div class="tt lite"><</div>
+			<div class="tt rite">></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var i=0;
+			var clone=$(".cont .box li").first().clone();
+			$(".cont .box").append(clone);	
+			var size=$(".cont .box li").size();	
+			for(var j=0;j<size-1;j++){
+				$(".cont .mun").append("<li></li>");
+			}
+			$(".cont .mun li").first().addClass("on");
+			
+		
+		$(".cont .mun li").hover(function(){
+		var index=$(this).index();
+		
+		i=index;
+		$(".cont .box").stop().animate({left:-index*520},500)	
+		$(this).addClass("on").siblings().removeClass("on")		
+	})
+		
+	var t=setInterval(function(){
+		i++;
+		move()
+	},2000)
+	
+	$(".cont").hover(function(){
+		
+		clearInterval(t);
+	},function(){
+		t=setInterval(function(){
+			i++;
+			move()
+		},2000)
+		
+	})
+	$(".cont .lite").click(function(){
+		i++
+		move();	
+	})
+	
+	$(".cont .rite").click(function(){
+		i--
+		move()	
+	})
+	
+	function move(){
+		if(i==size){
+			$(".cont  .box").css({left:0});	
+			i=1;
+		}
+		
+		if(i==-1){
+			
+			$(".cont .box").css({left:-(size-1)*520});
+			console.log(size)
+			i=size-2;//4+1-1-1
+		}
+		
+		$(".cont .box").stop().animate({left:-i*520},500)	
+		
+		
+		if(i==size-1){
+			$(".cont .mun li").eq(0).addClass("on").siblings().removeClass("on")	
+		}else{		
+			$(".cont .mun li").eq(i).addClass("on").siblings().removeClass("on")	
+		}
+		
+	
+		
+	}
+	
+		})
+	</script>
+</html>

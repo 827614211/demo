@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			ul{
+				width:765px ;
+				height:50px ;
+				background:gainsboro;
+				margin-top: 5px;
+			}
+			ul li{
+				width: 85px;
+				height: 50px;
+				float: left;
+				color: white;
+				line-height: 50px;
+				text-align: center;
+				font-size:18px ;
+				background: blueviolet;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<ul class="box"></ul>
+			<input class="btn1" type="button" name="" id="" value="添加" />
+			<input class="btn2" type="button" name="" id="" value="删除" />
+		</div>
+		
+	</body>
+	
+	<script src="jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var i=0;
+		var arr=['首页','新房','二手房','房租','商铺写字楼','海外地产','安居头条','房价','问答'];
+		$(".btn1").click(function(){
+			var li=$('<li></li>')
+			if(i<9&&i>=0){
+				$('.box').append(li);
+				$('.box li').eq(i).html(arr[i]);
+				i++
+			}
+		})
+		$('.btn2').click(function(){
+			i--
+			if(i<9&&i>=0){
+				$('.box li').eq(i).remove();
+			}
+			if(i<0){
+				i=0
+			}
+		})
+	</script>
+</html>

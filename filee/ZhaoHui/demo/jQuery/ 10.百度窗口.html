@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				color: black;
+			}
+			li{
+				list-style: none;
+			}
+			.top{
+				overflow: hidden;
+			}
+			.box{
+				margin-top: 10px;
+				float: right;
+			}
+			.box li{
+				color: white;
+				margin: 0 10px;
+				float: left;
+				font-size: 13px;
+				height: 25px;
+				line-height: 25px;
+			}
+			.box li a{
+				font-weight: bold;
+			}
+			.box .li1{
+				text-align: center;
+				background: #3385ff;
+			}
+			.logo{
+				height: 258px;
+				text-align: center;
+				margin: 0 auto;
+				margin-top: 140px;
+			}
+			.nav{
+				width: 650px;
+				margin: 0 auto;
+			}
+			.shou{
+				width: 540px;
+				height: 35px;
+				margin-top: 38px;
+			}
+			.btn{
+				width: 100px;
+				height: 39px;
+				background: #3385ff;
+				border: none;
+				color: white;
+				margin-top: 2px;
+				margin-left: -5px;
+			}
+			.denglu{
+				position: absolute;
+				margin: 0 auto;
+				top: 30%;
+				left: 40%;
+				/*cursor: move;*/
+				display: none;
+				z-index: 100;
+			}
+			.denglu img{
+				width: 300px;
+				height: 400px;
+			}
+			.tan{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				/*z-index: 10px;*/
+				display: none;
+				background: rgba(0,0,0,.3);
+			}
+			.ca{
+				display: block;
+				width: 30px;
+				height: 30px;
+				font-size: 19px;
+				line-height: 30px;
+				text-align: center;
+				background: gainsboro;
+				position: absolute;
+				top: 0;
+				right: 0;
+				/*border: 1px solid red;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<ul class="box">
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">hao123</a></li>
+				<li><a href="#">地图</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">贴吧</a></li>
+				<li><a href="#">学术</a></li>
+				<li class="btn2"><a href="#">登录</a></li>
+				<li><a href="#">设置</a></li>
+				<li class="li1">更多产品</li>
+			</ul>
+		</div>
+		<div class="nav">
+			<div class="logo">
+				<img src="img/baidu.png"/>
+			</div>
+			<input class="shou" type="" name="" id="" value="" />
+			<button class="btn">百度一下</button>
+		</div>
+		<div class="denglu">
+			<img src="img/denglu.png"/>
+			<span class="ca">x</span>
+		</div>
+		<div class="tan"></div>
+	</body>
+	<script src="jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.btn2').click(function(){
+				$('.denglu').show();
+				$('.tan').show();
+				$('.denglu').css('left',($(window).width()-$('.denglu').outerWidth())/2);
+				$('.denglu').css('top',($(window).height()-$('.denglu').outerHeight())/2);
+			});
+			
+			$('.ca').click(function(){          //点击x的时候窗口状态
+				$('.denglu').fadeOut();
+				$('.tan').fadeOut();
+			});
+			
+			$(document).ready(function(){
+				$(".denglu").mousedown(function(e){ 
+					$(this).css("cursor","move");//改变鼠标指针的形状 
+					var offset = $(this).offset();//DIV在页面的位置 
+					var x = e.pageX - offset.left;//获得鼠标指针离DIV元素左边界的距离 
+					var y = e.pageY - offset.top;//获得鼠标指针离DIV元素上边界的距离 
+					$(document).bind("mousemove",function(ev){ //绑定鼠标的移动事件，因为光标在DIV元素外面也要有效果，所以要用doucment的事件，而不用DIV元素的事件 
+					
+						$(".denglu").stop();//加上这个之后 
+						
+						var xx = ev.pageX - x;//获得X轴方向移动的值 
+						var yy = ev.pageY - y;//获得Y轴方向移动的值 
+					
+					$(".denglu").animate({left:xx+"px",top:yy+"px"},10); //移动动画
+					}); 
+			
+				}); 
+			});
+			
+			$(document).mouseup(function() { 
+					$(".denglu").css("cursor","default"); 
+					$(this).unbind("mousemove"); 
+				});
+		});
+	</script>
+</html>

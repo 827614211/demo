@@ -1,0 +1,425 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+li {
+	list-style: none;
+	 
+}
+
+/*cont begin*/
+.nva{
+	width: 1200px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.top{
+	width: 1200px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #ebebeb;
+}
+.shouye{
+	float: left;
+}
+.shouye li{
+	font-size: 12px;
+	color: #e6e6e6;
+}
+.shouye li a:hover{
+	color: red;
+}
+.right li a:hover{
+	color: red;
+}
+.shouye li a{
+	
+	padding: 0 12px;
+	color: #999999;
+}
+.pop{
+	border-radius:5px ;
+	color: white;
+	background: red;
+}
+.right{
+	float: right;
+}
+.right li{
+	font-size: 12px;
+	color: #e6e6e6;
+}
+.right li a{
+	font-size: 12px;
+	padding:10px;
+	color: #999999;
+}
+.long{
+	width: 1200px;
+	height: 90px;
+	overflow: hidden;
+	border: 1px solid #d9d9d9;
+}
+.longg{
+	width: 240px;
+	height: 60px;
+	float: left;
+	margin-top: 18px;
+	background: url(../img/sprite-hdft.png) no-repeat -80px 0;
+	/*border: 1px solid red;*/
+}
+.long2{
+	width: 240px;
+	height: 60px;
+	float: right;
+	margin-top: 18px;
+	background:url(../img/sprite-hdft_02.png);
+	/*border: 1px solid red;*/
+}
+.subnav{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 29px;
+	/*border: 1px solid black;*/
+}
+.subnav li{
+	border-radius:5px ;
+	/*height: 36px;*/
+	float: left;
+	font-size: 17px;
+	padding: 0 23px;
+	/*line-height: 60px;*/
+}
+.subnav li:hover{
+	color: white;
+	background: red;
+}
+/*cont end*/
+
+/*wrap begin*/
+.wrap{
+	width: 1200px;
+	height: 210px;
+	
+	margin-top: 10px;
+	border: 1px solid #dcdcdc;
+}
+.meau li{
+	width: 163px;
+	height: 92px;
+	float: left;
+	text-align: center;
+	margin-top: 6px;
+	margin-right: 6px;
+	border: 1px solid #f6f6f6;
+}
+.meau li:hover{
+	border: 1px solid red;
+}
+.meau li p{
+	font-size: 11px;
+	margin-top: 14px;
+	color: #999999;
+}
+/*wrap end*/
+
+/*title begin*/
+
+.titel{
+	width: 1200px;
+	height: 163px;
+	margin-top: 26px;
+	/*border: 1px solid red;*/
+}
+.titel .msg{
+	width: 238px;
+	height: 161px;
+	float: left;
+	position: relative;
+	border: 1px solid gainsboro;
+	}
+	.biao{
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		font-size: 17px;
+		border-bottom: 1px solid gainsboro;
+	}
+	.biao a:hover{
+		color: red;
+	}
+	.hot{
+		text-align: center;
+		color: red;
+	}
+	.hot span{
+		display: inline-block;
+		font-size: 11px;
+		margin-top: 30px;
+		margin-right: 10px;
+		color: #999999;
+	}
+	.hot b{
+		font-size: 23px;
+		color: red;
+	}
+	.hot p{
+		display:inline-block;
+		width: 112px;
+		height: 33px;
+		line-height: 33px;
+		margin-top: 20px;
+		color: white;
+		background: red;
+		border: 1px solid red;
+	}
+	.icon{
+		width: 65px;
+		height: 48px;
+		top:0;
+		background: url(../img/sprite-hdft.png) -80px -161px;
+		/*border: 1px solid red;*/
+		position: absolute;
+	}
+	
+	
+/*title end*/
+
+/*mod begin*/
+.mod{
+	width: 1200px;
+	height: 465px;
+	margin-top: 30px;
+	/*border: 1px solid red;*/
+}
+.mod .long3 h2{
+	height: 34px;
+	line-height: 34px;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.long3 span{
+	font-size: 15px;
+	margin-left: 10px;
+	color: #99b0d3;
+	margin-top: 15px;
+	display: inline-block;
+}
+.milit{
+	height: 388px;
+	margin-top: 15px;
+	/*border: 1px solid black;*/
+}
+.milit li{
+	width: 288px;
+	height: 187px;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 12px;
+	text-align: center;
+	border: 1px solid #f6f6f6;
+}
+.milit li:hover{
+	border: 1px solid red;
+}
+.milit li:nth-child(4n){
+	margin-right:0 ;
+}
+
+.milit li p{
+	margin-top: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+/*mod end*/
+
+/*精选项目 begin*/
+.item{
+	height: 42px;
+	/*border: 1px solid red;*/
+}
+.item h1{
+	font-size: 21px;
+	color: #6683af;
+	float: left;
+}
+.item span{
+	display: inline-block;
+	font-size: 15px;
+	margin-top:5px ;
+	color: #9999a4;
+}
+.clear{
+	height: 182px;
+	/*border: 1px solid red;*/
+}
+.clear ul{
+	
+	line-height: 42px;
+	
+	/*margin-top: 20px;*/
+	height: 42px;
+	border: 1px solid gainsboro;
+}
+.clear ul li{
+	float: left;
+	color: #666666;
+	text-align: center;
+	font-size: 13px;
+	line-height: 42px;
+}
+.clear .bt1{
+	width: 59px;
+	height:42px;
+	border-right:1px solid #f2f2f2 ;
+}
+.clear .bt2{
+	width: 119px;
+	height:42px;
+	border-right:1px solid #f2f2f2;
+}
+.clear .bt3{
+	width: 371px;
+	height:42px;
+	border-right:1px solid #f2f2f2 ;
+}
+.clear .bt4{
+	width: 119px;
+	height:42px;
+	border-right:1px solid #f2f2f2;
+}
+/*.clear .bt5{
+	width: 119px;
+	height:42px;
+	border:1px solid red ;
+}
+.clear .bt6{
+	width: 119px;
+	height:42px;
+	border:1px solid red ;
+}
+.clear .bt7{
+	width: 119px;
+	height:42px;
+	border:1px solid red ;
+}*/
+.box{
+	background:#f2f2f2;
+}
+.box li{
+	border: #f2f2f2;
+}
+.clear .bt11{
+	width: 59px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.clear .bt12{
+	width: 119px;
+	height:42px;
+	border:1px solid gainsboro;
+}
+.clear .bt13{
+	width: 371px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.clear .bt14{
+	font-size: 14px;
+	color: red;
+	width: 119px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.clear .bt15{
+	width: 119px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.clear .bt16{
+	width: 119px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.clear .bt17{
+	width: 119px;
+	height:42px;
+	border:1px solid gainsboro ;
+}
+.bt17 span{
+	text-align: center;
+	line-height: 25px;
+	color: #83b0de;
+	display: inline-block;
+	border-bottom: 3px solid #83b0de;
+	width: 80px;
+	height: 25px;
+}
+.bt8{
+	width: 159px;	
+	height: 42px;
+	/*text-align: center;*/
+}
+.bt8 span{
+	display: inline-block;
+	height: 28px;
+	color: white;
+	background: red;
+	line-height: 28px;
+	width: 94px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+.clear .gengduo{
+	width: 1200px;
+	height: 42px;
+	color: #666666;
+	font-size: 13px;
+text-align: center;
+	/*border: 1px solid red;*/
+}
+/*精选项目 end*/
+
+/*root begin*/
+.root{
+	width: 100%;
+	height: 188px;
+	/*border: 1px solid red;*/
+}
+.news{
+	width: 1200px;
+	height: 188px;
+	/*border: 1px solid red;*/
+}
+.zzb{
+	height: 90px;
+	text-align: center;
+	border-bottom: 1px solid #e6e6e6;
+}
+.zzb li{
+	color: #d0d0d0;
+	margin-top:52px ;
+	
+}
+.zzb li a:hover{
+	color: red;
+}
+.zzb li a{
+	padding: 0 18px;
+	font-size: 14px;
+	color:#666666 ;
+}
+.copy p{
+	font-size: 11px;
+	color: #999999;
+	margin-top: 17px;
+	text-align: center;
+}
+/*root end*/
