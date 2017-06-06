@@ -31,7 +31,6 @@ $(function(){
 		if(i==-1){
 			i=size-1;	
 		}
-		console.log(i);
 		$(".boc li").eq(i).addClass("active").siblings().removeClass("active");
 		$(".two-g li").eq(i).fadeIn(300).siblings().fadeOut(300);
 		
@@ -41,7 +40,6 @@ $(function(){
 		if(i==size){
 			i=0;	
 		}
-		console.log(i);
 		$(".boc li").eq(i).addClass("active").siblings().removeClass("active");
 		$(".two-g li").eq(i).fadeIn(300).siblings().fadeOut(300);
 		

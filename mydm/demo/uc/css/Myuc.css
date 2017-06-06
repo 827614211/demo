@@ -1,0 +1,479 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+/*header begin*/
+
+.nav {
+	width: 980px;
+	margin: 0 auto;
+	/*background: red;*/
+}
+
+.header {
+	height: 70px;
+}
+
+.logo img {
+	margin: 10px 0 0 0;
+}
+
+.mainnav {
+	float: right;
+}
+
+.mainnav ul li {
+	float: left;
+	font-size: 18px;
+	margin: 0 53px 0 0;
+	color: #444455;
+	line-height: 70px;
+}
+
+.mainnav li:hover {
+	color: #ff6600;
+}
+
+
+/*header end*/
+
+
+/*bannre begin*/
+
+.banner {
+	position: relative;
+}
+
+.lunbo li {
+	height: 15px;
+	width: 15px;
+	background: #d7d5d4;
+	margin: 10px 11px;
+	float: left;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+.lunbo {
+	/*display: none;*/
+	position: absolute;
+	top: 360px;
+	left: 880px;
+}
+
+.lunbo li:hover {
+	background: #d74d09;
+}
+
+
+/*购物返3倍积分*/
+
+
+/*bannre end*/
+
+
+/*wrap begin*/
+
+.wrap {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.wechae li {
+	/*border: 1px solid black;*/
+	text-align: center;
+	margin: 18px 0;
+	display: inline-block;
+}
+
+.saomiao p {
+	font-size: 11px;
+}
+
+.saomiao p:hover {
+	color: #ff6600;
+}
+
+.saomiao1 {
+	/*border: 1px solid red;*/
+	float: right;
+}
+
+.saomiao1 img {
+	margin: 10px 0 0 0;
+}
+
+.wechae .android {
+	margin: 21px 0 0 90px;
+}
+
+.wechae .android p {
+	/*margin: 21px 5px;*/
+}
+
+.wechae .iphone {
+	/*border: 1px solid red;*/
+	margin: 21px 0 0 60px;
+}
+
+.wechae .diann {
+	margin: 0 30px;
+}
+
+.wechae .iphone1 {
+	margin: 0 30px;
+}
+
+.hh {
+	display: inline-block;
+	margin: 12px 0 0 50px;
+	height: 119px;
+	border: 1px solid #eeeeee;
+}
+
+
+/*wrap end*/
+
+
+/*news begin*/
+
+.news {
+	position: relative;
+	overflow: hidden;
+}
+
+.news p:hover {
+	color: #ff6600;
+}
+
+.news span:hover {
+	color: #ff6600;
+}
+
+.news .msg {
+	height: 375px;
+	width: 290px;
+	float: left;
+	margin: 40px 58px 0 0;
+	/*border: 1px solid red;*/
+}
+
+.news .msg3 {
+	height: 370px;
+	width: 290px;
+	/*float:right;*/
+	position: absolute;
+	right: 0;
+	margin: 40px 0 0 0;
+	/*border: 1px solid red;*/
+}
+
+.msg h2 {
+	display: inline-block;
+	font-size: 18px;
+	color: #555555;
+}
+
+.msg3 h2 {
+	display: inline-block;
+	font-size: 18px;
+	color: #555555;
+}
+
+.msg3 .gendu {
+	float: right;
+	font-size: 12px;
+	color: #585858;
+}
+
+.msg3 .meiche {
+	font-size: 12px;
+}
+
+.msg .gengduo {
+	float: right;
+	font-size: 12px;
+	color: #585858;
+}
+
+.xiaoyuan {
+	width: 290px;
+	height: 154px;
+	margin: 23px 0 0 0;
+	background: #f2f2f2;
+}
+
+.msg .chehua {
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 0 0 59px;
+	text-align: center;
+}
+
+.msg p {
+	font-size: 12px;
+	margin: 18px 0 0 0;
+}
+
+.msg3 p {
+	font-size: 12px;
+	margin: 18px 0 0 0;
+}
+
+.msg .meiti {
+	display: inline-block;
+	font-size: 12px;
+	/*margin:0 0 0 59px;*/
+	text-align: center;
+}
+
+.haha {
+	width: 100%;
+	/*height: 500px;*/
+	border-top: 1px solid #eeeeee;
+}
+
+
+/*news end*/
+
+
+/*fbg begin*/
+
+.fbg {
+	width: 100%;
+	height: 530px;
+	background: #333333;
+	margin: 43px 0 0 0;
+	position: relative;
+}
+
+.dibu {
+	overflow: hidden;
+}
+
+.dibu ul {
+	float: left;
+	margin-right: 56px;
+}
+
+.dibu .gongsi {
+	margin-right: 118px;
+}
+
+.dibu .kaifang {
+	margin-right: 94px;
+}
+
+.dibu .zhaoping {
+	margin-right: 106px;
+}
+
+.dibu li {
+	color: #aaaaaa;
+	margin: 8px 0;
+	font-size: 11px;
+}
+
+.dibu li:hover {
+	color: #ff6600;
+}
+
+.dibu .diyi {
+	margin: 31px 0 11px 0;
+}
+
+.tt {
+	width: 100px;
+	height: 22px;
+	right: 9px;
+	position: relative;
+	margin: 10px 0;
+	padding: 0 0 0 6px;
+	border: 1px solid #434343;
+}
+
+.xiangx {
+	float: right;
+	margin: 3px 0;
+}
+
+.ww {
+	/*border: 1px solid red;*/
+	top: 3px;
+	/*left: 6px;*/
+	margin: 0 6px;
+	position: absolute;
+}
+
+.tt .qq1 {
+	height: 15px;
+	margin: 3px 0;
+	width: 16px;
+	background: url(../img/ico.png) -10px -255px;
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+.t1 .qq2 {
+	height: 16px;
+	width: 15px;
+	background: url(../img/ico.png) -10px -284px;
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+.t1 .qq3 {
+	height: 13px;
+	width: 17px;
+	background: url(../img/ico.png) -10px -414px;
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+.t1 .qq4 {
+	height: 12px;
+	width: 18px;
+	background: url(../img/ico.png) -10px -382px;
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+.t1 .qq5 {
+	height: 15px;
+	width: 21px;
+	background: url(../img/ico.png) -10px -313px;
+	display: inline-block;
+}
+
+.t1 .qq6 {
+	height: 19px;
+	width: 19px;
+	background: url(../img/ico.png) -10px -342px;
+	display: inline-block;
+}
+
+.t1 .qq7 {
+	height: 16px;
+	width: 21px;
+	background: url(../img/ico.png) -10px -448px;
+	display: inline-block;
+}
+
+.ali {
+	height: 37px;
+	line-height: 37px;
+	margin-top: 20px;
+	width: 980px;
+	position: relative;
+	border-bottom: 1px dashed #565656;
+	border-top: 1px dashed #565656;
+}
+
+.ali1 {
+	height: 37px;
+	width: 980px;
+	border-bottom: 1px dashed #565656;
+	border-top: 1px dashed #565656;
+	position: relative;
+}
+
+.ali1 a {
+	color: #aaaaaa;
+	line-height: 37px;
+	margin: 0 5px;
+}
+
+.ali a {
+	color: #aaaaaa;
+	margin: 0 5px;
+}
+
+.ali1 li {
+	font-size: 11px;
+	color: #aaaaaa;
+}
+
+.ali li {
+	font-size: 11px;
+	color: #aaaaaa;
+}
+.ali li a:hover{
+	color:#ff6600;
+}
+.ali1 span{
+	color: #666666;
+}
+.ali1 li a:hover{
+	color:#ff6600;
+}
+.xiangxia {
+	width: 20px;
+	height: 20px;
+	float: right;
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	background: url(../img/ico.png) -103px -245px;
+	/*border: 1px solid red;*/
+}
+
+.longo2 .houzi {
+	margin: 38px 0;
+	/*border: 1px solid red;*/
+}
+
+.wangluo {
+	width: 450px;
+	height: 125px;
+	margin: 10px 0 0 27px;
+	display: inline-block;
+	/*border: 1px solid red;*/
+}
+
+.wangluo p {
+	color: #666666;
+	font-size: 12px;
+}
+
+.icon {
+	width: 195px;
+	height: 45px;
+	float: right;
+	margin: 22px 0 0 0;
+	display: inline-block;
+	/*border: 1px solid red;*/
+}
+
+.bubao {
+	width: 332px;
+	height: 45px;
+	display: inline-block;
+	/*border: 1px solid red;*/
+	position: absolute;
+	right: 1px;
+	top: 110px;
+}
+
+.zhongwen {
+	width: 30px;
+	height: 30px;
+	border: 1px solid red;
+	position: absolute;
+	right: 410px;
+	top: 20px;
+	background: url(../img/ico.png) -6px -225px;
+}
+
+
+/*fbg end*/

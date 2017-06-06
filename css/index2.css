@@ -87,6 +87,10 @@ a{
 	left:50px;
 	position: absolute;
 }
+.ttb img{
+	width: 100px;
+	height: 100px;
+}
 .cube .in-front{
 	transform: translateZ(50px);
 }
@@ -348,6 +352,9 @@ a{
 	float: right;
 	/*border: 1px solid red;*/
 }
+.depice p{
+	font-weight: bold;
+}
 .depice p span{
 	font-size: 15px;
 }
@@ -458,7 +465,6 @@ a{
 	width: 500px;
 	height: 200px;
 	font-size: 18px;
-	color: #152b5a;
 	/*border: 1px solid red;*/
 }
 .pingjia .tit{

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-size: 12px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			.cont{
+				margin: 50px auto;
+				width: 298px;
+                height: 243px;
+                overflow: hidden;
+				border: 1px solid pink;
+			}
+			.let li , .rit li{
+            background: url(images/lili.jpg) repeat-x;
+        }
+         .let a:hover,.rit li a:hover{
+            background-image: url(images/abg.gif);
+        }
+			.let{
+				float: left;
+			}
+			.con{
+				float: left;
+				border-left: 1px solid pink;
+                border-right: 1px solid pink;
+			}
+			.con img{
+				width: 200px;
+				height: 250px;
+			}
+			.rit{
+				float: left;
+			}
+			.let li a, .rit li a{
+				display: block;
+	            width: 48px;
+	            height: 27px;
+	            line-height: 27px;
+	            text-align: center;
+	            color: black;
+			}
+		</style>
+		<script src="jquery-1.12.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".let li").mouseenter(function(){
+					$(".con li").eq($(this).index()).show().siblings("li").hide();
+				});
+				$(".rit li").mouseenter(function(){
+					$(".con li").eq($(this).index() +9).show().siblings("li").hide();
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="cont">
+			<ul class="let">
+				<li><a href="#">女鞋</a></li>
+				<li><a href="#">女鞋</a></li>
+				<li><a href="#">雪地鞋</a></li>
+				<li><a href="#">冬裙</a></li>
+				<li><a href="#">里衣服</a></li>
+				<li><a href="#">毛衣</a></li>
+				<li><a href="#">棉服</a></li>
+				<li><a href="#">羽绒服</a></li>
+				<li><a href="#">牛仔路</a></li>
+			</ul>
+			<ul class="con">
+				<li><a href="#"><img src="images/女靴.jpg"/></a></li>
+				<li><a href="#"><img src="images/雪地靴.jpg"/></a></li>
+				<li><a href="#"><img src="images/冬裙.jpg"/></a></li>
+				<li><a href="#"><img src="images/呢大衣.jpg"/></a></li>
+				<li><a href="#"><img src="images/毛衣.jpg"/></a></li>
+				<li><a href="#"><img src="images/棉服.jpg"/></a></li>
+				<li><a href="#"><img src="images/羽绒服.jpg"/></a></li>
+				<li><a href="#"><img src="images/牛仔裤.jpg"/></a></li>
+				<li><a href="#"><img src="images/女包.jpg"/></a></li>
+				<li><a href="#"><img src="images/男包.jpg"/></a></li>
+				<li><a href="#"><img src="images/登山鞋.jpg"/></a></li>
+				<li><a href="#"><img src="images/皮衣.jpg"/></a></li>
+				<li><a href="#"><img src="images/皮带.jpg"/></a></li>
+				<li><a href="#"><img src="images/男毛衣.jpg"/></a></li>
+				<li><a href="#"><img src="images/男靴.jpg"/></a></li>
+				<li><a href="#"><img src="images/围巾.jpg"/></a></li>
+			</ul>
+			<ul class="rit">
+				<li><a href="#">女包</a></li>
+				<li><a href="#">女包</a></li>
+				<li><a href="#">男包</a></li>
+				<li><a href="#">登山鞋</a></li>
+				<li><a href="#">皮衣</a></li>
+				<li><a href="#">皮带</a></li>
+				<li><a href="#">男毛衣</a></li>
+				<li><a href="#">男鞋</a></li>
+				<li><a href="#">男棉服</a></li>
+			</ul>
+		</div>
+	</body>
+	
+</html>

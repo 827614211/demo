@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body style="padding: 0 0 50px 0;">
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-right" id="offCanvasSide">
+				<div class="mui-scroll-wrapper" id="offCanvasSideScroll">
+					<div class="mui-scroll" style="padding: 30px 0;">
+						<!-- 菜单具体展示内容 -->
+						<div class="logo1" style="text-align: center; padding: 10px 0;">
+							<img src="images/logo.png" style="width: 50%;" />
+						</div>
+						<div class="mystyle">
+							<ul class="mui-table-view" id="mylist" style="background:#333333;border: 0; color:#fff">
+								<li class="mui-table-view-cell my mui-active">
+									<a href="#">首页</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">公司简介</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">产品展示</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">荣誉资质</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">工程案例</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">新闻动态</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">材质分析</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">厂房展示</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">石笼参数</a>
+								</li>
+								<li class="mui-table-view-cell my">
+									<a href="#">联系我们</a>
+								</li>
+							</ul>
+							<script src="js/Mystyle-public.js" type="text/javascript" charset="utf-8"></script>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav" style="background:#fff;">
+					<a class="mui-icon mui-action-menu mui-icon-home mui-pull-left" href="#" style="font-weight: bold;color:#006699;margin-left: 10px; font-size: 26px;"></a>
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide" style="font-weight: bold; color:#006699;margin-right: 10px;"></a>
+					<img class="logo2" src="images/logo.png" / style="height: 85%; display: block; margin: auto; position: relative; top: 3px;">
+				</header>
+				<div class="mui-content mui-scroll-wrapper" id="offCanvasContentScroll">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+						<div class="chanpin-block block4">
+							<div class="block-title">
+								<div>
+									<p>当前业务:</p>
+									<a href="#">
+										<p>首页></p>
+									</a>
+									<a href="#">
+										<p>产品展示></p>
+									</a>
+								</div>
+								<div>
+									<i></i>
+									<span>产品中心:</span>
+								</div>
+							</div>
+							<div class="mui-segmented-control" style="border:none; background: #fff;">
+								<a class="mui-control-item mui-active" href="#item1">石笼网</a>
+								<a class="mui-control-item" href="#item2">边坡防护网</a>
+								<a class="mui-control-item" href="#item3">护栏网</a>
+								<a class="mui-control-item" href="#item4">荷兰网</a>
+							</div>
+							<div class="content">
+								<div class="mui-control-content mui-active" id="item1">
+									<ul class="mui-table-view mui-grid-view">
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20H70-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20H70-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20H70-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mui-control-content" id="item2">
+									<ul class="mui-table-view mui-grid-view">
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121140-L.jpg">
+												<div class="mui-media-body">柔性防护网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121420-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121140-L.jpg">
+												<div class="mui-media-body">柔性防护网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121420-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121140-L.jpg">
+												<div class="mui-media-body">柔性防护网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ121420-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mui-control-content" id="item3">
+									<ul class="mui-table-view mui-grid-view">
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20Z90-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ210020-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20Z90-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ210020-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ20Z90-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ210020-L.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mui-control-content" id="item4">
+									<ul class="mui-table-view mui-grid-view">
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ21043561.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ21043561.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ211150-L.jpg">
+												<div class="mui-media-body">高尔凡石笼网</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6">
+											<a href="#">
+												<img class="mui-media-object" src="images/1-150HQ21043561.jpg">
+												<div class="mui-media-body">TECCO格栅网</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="bottom" style="padding: 10px 0 10px 0; background: #fff;">
+							<div class="footer-text">
+								<h3 style="text-align: center;margin: 0;">
+					    			<span class="right-line" style="font-size: 16px;">上海浩爽</span>
+					    			<span style="font-weight: bold;font-size: 16px;">|</span>
+					    			<a href="#" style="color:#000000">
+					    				<span style="font-size: 16px;">电脑版</span>
+					    			</a>
+	    		                </h3>
+								<p style="text-align: center;margin: 0;">由智佳科技提供技术支持</p>
+								<p style="text-align: center;margin: 0;">CopyRight©2015 cqhot.cn Inc.</p>
+							</div>
+						</div>
+					</div>
+					<div class="mui-off-canvas-backdrop"></div>
+				</div>
+				<script type="text/javascript">
+					//				控制内容区是否滑动
+					mui('#offCanvasSideScroll').scroll();
+					mui('#offCanvasContentScroll').scroll();
+					//				控制菜单点击时的样式
+					var Ul = document.getElementById('mylist');
+					var Li = document.getElementsByClassName('my');
+					for(var i = 0; i < Li.length; i++) {
+						Li[i].ontouchstart = function() {
+							for(var i = 0; i < Li.length; i++) {
+								Li[i].className = 'mui-table-view-cell my';
+								Li[i].style.background = '#333';
+							}
+							this.className = 'mui-table-view-cell my mui-active';
+							this.style.background = '#333';
+						}
+					}
+				</script>
+				<!-- 主界面不动、菜单移动 -->
+				<!-- 侧滑导航根容器 -->
+			</div>
+			<div class="footer">
+				<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default am-no-layout" id="gongju">
+					<ul class="am-navbar-nav am-cf am-avg-sm-4" style="background-color:#890505">
+						<li>
+							<a href="sms:18623356220" class="">
+								<img src="images/Information.png" alt="消息">
+								<span class="am-navbar-label">消息</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:18623356220" class="">
+								<img src="images/phone.png" alt="呼叫">
+								<span class="am-navbar-label">呼叫</span>
+							</a>
+						</li>
+						<li data-am-navbar-share="">
+							<a href="###" class="">
+								<img src="images/share.png" alt="分享">
+								<span class="am-navbar-label">分享</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://f.amap.com/6vdCX_08E24n8" class="">
+								<img src="images/map.png" alt="地图">
+								<span class="am-navbar-label">地图</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</body>
+
+</html>
