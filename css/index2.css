@@ -2,6 +2,9 @@
 	margin: 0;
 	padding:0;
 }
+img{
+	border: none;
+}
 li{
 	list-style: none;
 }
@@ -22,7 +25,6 @@ a{
 	position: relative; 
 	top: 35%; 
 	font: 700 60px 'Microsoft Yahei'; 
-	/*text-align: center;*/
 }
 
 /*第一屏开始*/
@@ -149,7 +151,6 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	
 }
 .box{
 	width: 350px;
@@ -157,7 +158,6 @@ a{
 	margin-left: 25px;
 	margin-top: 25px;
 	background-size: 100% 100%;
-	
 }
 .boo{
 	width: 300px;
@@ -165,7 +165,6 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	
 }
 .med{
    width: 250px;
@@ -286,13 +285,11 @@ a{
 	width: 1200px;
 	height: 800px;
 	margin: 0 auto;
-	/*border: 1px solid red;*/
 }
 .opus .two{
 	width: 1180px;
 	height: 360px;
 	margin: 5px 10px;
-	/*border: 1px solid black;*/
 }
 .use{
 	position: relative;
@@ -305,7 +302,6 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	
 	z-index: 1;
 	display: none;
 }
@@ -350,7 +346,6 @@ a{
 	width: 500px;
 	height: 300px;
 	float: right;
-	/*border: 1px solid red;*/
 }
 .depice p{
 	font-weight: bold;
@@ -368,12 +363,9 @@ a{
 	margin: 0 5px;
 }
 
-
 .use1 li img{
 	width: 200px;
 }
-
-
 
 .bou{
 	width:500px;
@@ -437,9 +429,11 @@ a{
 .more a{
 	color: white;
 }
+.more:hover{
+	background:#6641E2;
+	border: none;
+}
 /*第三屏结束*/
-
-
 
 /*第四屏开始*/
 .touch{
@@ -458,14 +452,12 @@ a{
 	margin-top: 20px;
 	margin: 0 auto;
 	font-size: 20px;
-	/*border: 1px solid red;*/
 }
 .pingjia{
 	margin: 0 auto;
 	width: 500px;
 	height: 200px;
-	font-size: 18px;
-	/*border: 1px solid red;*/
+	font-size:20px;
 }
 .pingjia .tit{
 	font-size: 25px;
